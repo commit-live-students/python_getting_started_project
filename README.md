@@ -1,1 +1,1 @@
-# python_getting_started_project
+# project_template
