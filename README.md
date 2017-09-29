@@ -10,7 +10,7 @@ We have already learnt about the basics of Python in the in-class session. We ha
 
 Now let's apply this newly learnt superpower to explore the most exciting sport event of India, the IPL! 
 
-RCB!!RCB!!...
+**RCB!!RCB!! .....**
 
 Doing this assignment will help you get acquainted with basics of Python.
 
@@ -21,6 +21,6 @@ The Indian Premier League (IPL) is a professional T20 cricket league in India co
 The IPL and other cricket related datasets are available at `cricsheet.org`. Feel free to visit the website and explore the data by yourself as exploring new sources of data is one of the interesting activities a data scientist gets to do.
 
 So let's get started with the first IPL match that was played in 2008. It turned out to be a run fest.
-Remember, BAZ had scored a century?
+Remember, Brendon McCullum (BAZ) had scored a century?
 
 Let's explore the first match data to find out what happened in the match.
