@@ -7,4 +7,6 @@ As we discussed, the data comes from `cricsheet.org` which provides structured b
 
 Write your code to import the following yaml file into `data` variable
 
- Path : '../data/ipl_match.yaml'
+**Path : '../data/ipl_match.yaml'**
+
+Let's do it!!
