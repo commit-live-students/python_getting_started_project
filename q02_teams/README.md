@@ -7,4 +7,4 @@ Save the answer in the variable 'teams' inside the function.
 
 Hint?
 
-There are 2 teams, in the data.
+There are 2 teams in the data.
