@@ -1,5 +1,5 @@
-## How many runs did BC McCullum make?
+## How many runs did Brendon McCullum make?
 
-* This function is same as previous function. This function will determine which batsman scored the runs.
+* This function is same as previous function. This function will return the number of runs scored by Brendon McCullum.
 
-Save the value in the variable 'runs' inside the function.
+The returned value must be an `int` 
