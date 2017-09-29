@@ -3,7 +3,7 @@
 Well done, on solving your first task.
 You must be pretty excited to try more things, right?
 
-Write a function to return the name of the teams, which played that match.
+Write a function to return the name of the teams, who played that match.
 
 Find the teams who played that match and return their names.
 
