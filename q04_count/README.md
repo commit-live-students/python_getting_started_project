@@ -1,7 +1,7 @@
-## Task 4: RT Ponting batted in the first innings. 
+## Task 4: Ricky Ponting batted in the first innings. 
 
-How many deliveries did he bat?
+How many deliveries did he bat??
 
-* This function finds the single value of integer type from the data related to RT Ponting.
+* This function returns the number of balls faced by Ricky Ponting in the first innings.
 
-Save the value in the variable 'count' inside the function.
+The return value must be an `int`.
