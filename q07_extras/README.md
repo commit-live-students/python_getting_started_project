@@ -1,6 +1,8 @@
 ## How many more "extras" (wides, legbyes, etc) were bowled in the second innings as compared to the first inning?
 
-* The task is to find the number of more **extras** bowled in the second innings, compared to first.
+The task is to find the number of more **extras** bowled in the second innings, compared to first.
+
+* Save the number of more **extras** bowled in the second innings as opposed to first, in the variable `difference`. 
 
 You will get to use one of the binary operators, we studied in the class.
 
