@@ -4,6 +4,8 @@ So far, so great!!
 
 Let's continue!!
 
-* This function is same as previous function. This function will return the number of runs scored by Brendon McCullum.
+It was very exciting to see McCullum thrash the bowlers around the park and create history in the inaugral match itself.
 
-The returned value must be an integer 
+Let's rejuvenate ourselves with his Masterclass
+
+* Save the number of runs scored by Brendon McCullum in a variable `runs`.
