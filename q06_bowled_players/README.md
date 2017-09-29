@@ -1,5 +1,11 @@
 ## Find the names of all players that got bowled out in the second innings.
 
-* This function is extension of previous function. This function will list of bowled out players.
+Now, it's time to appreciate the efforts made by the bowlers.
 
-Save the value in the variable 'bowled_players' inside the function.
+* So, write a function to return the number of players whose mode of dismissal was `bowled out`
+
+Hint?
+
+This task is similar to the previous one.
+
+So let's do it.
