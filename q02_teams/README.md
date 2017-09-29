@@ -1,10 +1,12 @@
 ## Task 2: Which teams played the match?
 
-* This function finds the teams from the data.
+Well done, on solving your first task.
+You must be pretty excited to try more things, right?
 
+Write a function to return the name of the teams, which played that match.
 
-Save the answer in the variable 'teams' inside the function.
+Find the teams who played that match and return their names.
 
-Hint?
+**FOOD FOR THOUGHT**
 
-There are 2 teams in the data.
+Guess the return type?
