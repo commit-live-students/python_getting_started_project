@@ -8,4 +8,4 @@ Quite historic!!
 
 * Write a function to return the name of the batsman who faced the  first ball of the first innings.
 
-So, let's find out that lucky player.
+So, let's find out that Lucky Batsman.
