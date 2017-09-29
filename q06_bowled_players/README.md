@@ -7,7 +7,7 @@ But such is the nature of T20, that bowlers rarely get praised for their effors.
 
 So, now it's time to appreciate the efforts made by the bowlers.
 
-* So, write a function to return the number of players whose mode of dismissal was `bowled out`
+* So, save the number of players whose mode of dismissal was **bowled out** in the variable `bowled_players`.
 
 _Hint: This task is similar to the previous one._
 
