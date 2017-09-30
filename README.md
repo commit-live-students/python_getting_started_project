@@ -1,4 +1,4 @@
-# Python Day01 Assignment
+# Getting Started with Python
 
 We have already learnt about the basics of Python in the in-class session. We have learnt about
 
