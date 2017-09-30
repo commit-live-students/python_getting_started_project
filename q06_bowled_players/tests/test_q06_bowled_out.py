@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append(os.path.join(os.path.dirname(os.curdir), '..', '..'))
+sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 from unittest import TestCase
 from q06_bowled_players.build import bowled_out
 from q01_read_data.build import read_data
