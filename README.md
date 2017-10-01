@@ -24,3 +24,5 @@ So let's get started with the first IPL match that was played in 2008. It turned
 Remember, Brendon McCullum (BAZ) had scored a century?
 
 Let's explore the first match data to find out what happened in the match.
+
+You have an opportunity to earn a total of 350 points by solving all assignments of this project.
