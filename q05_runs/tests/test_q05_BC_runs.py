@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 from unittest import TestCase
-from q01_read_data.build import read_data
+from greyatomlib.python_getting_started.q01_read_data.build import read_data
 from q05_runs.build import BC_runs
 
 class TestBC_runs(TestCase):
