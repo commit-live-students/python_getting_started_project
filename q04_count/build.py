@@ -4,6 +4,7 @@ data = read_data()
 
 # Your Solution Here
 def deliveries_count(data=data):
+
     innings1 = data['innings'][0]['1st innings']['deliveries']
     count = 0
     for ball in innings1:
