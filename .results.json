@@ -1,0 +1,1 @@
+{"stats": {"passes": 1, "skipped": 0, "encoding": "UTF-8", "errors": 0, "failures": 0, "total": 1}, "results": [{"classname": "python_getting_started_project.q06_bowled_players.tests.test_q06_bowled_out:TestBowled_out", "type": "success", "name": "test_bowled_out", "time": 0.35352396965026855}]}
