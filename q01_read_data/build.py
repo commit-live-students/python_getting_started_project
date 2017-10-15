@@ -11,4 +11,3 @@ def read_data():
         data = yaml.load(f)
     # return data variable
     return data
-read_data()
