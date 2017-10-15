@@ -4,7 +4,7 @@ data = read_data()
 
 # solution
 def teams(data=data):
-
+    print(data)
     # write your code here
     #teams =
 
