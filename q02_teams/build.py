@@ -6,6 +6,7 @@ data = read_data()
 def teams(data=data):
     #print(data)
     # write your code here
+    print(type(data))
     teams = data['info']['teams']
 
     return teams
