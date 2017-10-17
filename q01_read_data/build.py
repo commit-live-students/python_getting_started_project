@@ -7,6 +7,6 @@ def read_data():
     # Write your code here
 
     data = yaml.safe_load(open('./data/ipl_match.yaml','r'))
-    
+
     # return data variable
     return data
