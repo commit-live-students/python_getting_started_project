@@ -7,10 +7,4 @@ data = read_data()
 def first_batsman(data=data):
     innings = data['innings'][0]['1st innings']['deliveries'][0]
     name = innings[0.1]['batsman']
-
-    # Write your codehere
-
-
-
-
     return name
