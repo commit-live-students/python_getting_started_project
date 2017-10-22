@@ -1,6 +1,4 @@
 import yaml
-import pandas as pd
-
 
 def read_data():
 
@@ -11,9 +9,9 @@ def read_data():
     #stream = open("../data/ipl_match.yaml", "r")
     #data = yaml.load_all(stream)
 
-    f = open('./data/ipl_match.yaml')
+    f = open('../data/ipl_match.yaml')
     data = yaml.load(f)
     # return data variable
     return data
 
-print read_data()
+read_data()

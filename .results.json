@@ -1,1 +1,0 @@
-{"stats": {"passes": 1, "skipped": 0, "encoding": "UTF-8", "errors": 0, "failures": 0, "total": 1}, "results": [{"classname": "python_getting_started_project.q01_read_data.tests.test_q01_read_data:TestRead_data", "type": "success", "name": "test_read_data", "time": 0.37241291999816895}]}
