@@ -10,3 +10,5 @@ def BC_runs(data):
 
 
     return(runs)
+
+print data['innings'][0]['1st innings']['deliveries']
