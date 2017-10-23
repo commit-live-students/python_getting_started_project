@@ -9,3 +9,7 @@ def bowled_out(data=data):
 
 
     return bowled_players
+runs = 0
+for balls in data['innings'][0]['1st innings']['deliveries']:
+    for key, value in balls.items():
+        print value['wicket']
