@@ -11,12 +11,12 @@ def extras_runs(data=data):
     for i in range(len(data['innings'])):
         for key in data['innings'][i]:
             for delivery_number in data['innings'][i][key]['deliveries']:
-                if i % 2 == 0 and 'extras' in delivery_number.values()[0]:
+                if 'extras' in delivery_number.values()[0]:
                     for extra in delivery_number.values()[0]['extras']:
-                        difference -= len(delivery_number.values()[0]['extras'].keys())
-                if i % 2 != 0 and 'extras' in delivery_number.values()[0]:
-                    for extra in delivery_number.values()[0]['extras']:
-                        difference += len(delivery_number.values()[0]['extras'].keys())
+                        if i % 2 == 0:
+                            difference -= len(delivery_number.values()[0]['extras'].keys())
+                        else:
+                            difference += len(delivery_number.values()[0]['extras'].keys())
 
 
     return abs(difference)
