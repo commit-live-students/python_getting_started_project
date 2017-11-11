@@ -4,5 +4,4 @@ data = read_data()
 def teams(data=data):
 
     teams = data['info']['teams']
-    print(teams)
     return teams
