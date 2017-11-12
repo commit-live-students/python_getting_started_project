@@ -14,9 +14,8 @@ def extras_runs(data=data):
         for key in d[i]:
             for deliv in d[i][key]['deliveries']:
                 if 'extras' in deliv.values()[0]:
-                    for extra in deliv.values()[0]['extras']:
-                        if i % 2 == 0:
-                            difference += 1
-                        else:
-                            difference -= 1
+                    if i % 2 == 0:
+                        difference += 1
+                    else:
+                        difference -= 1
     return abs(difference)
