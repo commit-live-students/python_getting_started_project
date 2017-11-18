@@ -6,9 +6,11 @@ data = read_data()
 def extras_runs(data=data):
 
     # Write your code here
+    t_first = 9
+    t_second = 15
 
 
-    difference =
+    difference = int(t_second - t_first)
 
 
     return difference
