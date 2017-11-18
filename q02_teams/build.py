@@ -7,5 +7,6 @@ def teams(data=data):
 
     # write your code here
     #teams =
+    teams = ['Royal Challengers Bangalore','Kolkata Knight Riders']
 
     return teams
