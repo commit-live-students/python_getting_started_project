@@ -6,5 +6,5 @@ data = read_data()
 def teams(data=data):
 
     # write your code here
-    teams = data['info']['teams']    
+    teams = data['innings'][0]['1st innings']['deliveries'][0][0.1]['batsman']
     return teams
