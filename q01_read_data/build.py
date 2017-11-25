@@ -7,5 +7,7 @@ def read_data():
     with open('./data/ipl_match.yaml', 'r') as f:
         data = yaml.load(f)
 
+    print data
+    print type(data)
     # return data variable
     return data
