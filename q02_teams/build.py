@@ -4,8 +4,8 @@ data = read_data()
 
 # solution
 def teams(data=data):
-
-    # write your code here
-    #teams =
-
+    f = data.values()
+    fset = f[0]
+    fset = fset.values()
+    teams = fset[6]
     return teams
