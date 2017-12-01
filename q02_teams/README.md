@@ -1,14 +1,24 @@
-## Task 2: Which teams played the match?
+# Which teams played the match?
 
 Well done, on solving your first task.
 You must be pretty excited to try more things, right?
 
 Now, lets start with something basic and find the teams which played the first ever match in IPL.
 
-* Save the names of the teams playing that match in a variable `teams`.
+## Write the function `teams` that :
+* Save the names of the teams playing on the basis of `info` of that match in a variable.
 
-Find the teams who played that match and return their names.
+### Parameters:
 
-**FOOD FOR THOUGHT**
+| Parameter | dtype | argument type | default value | description |
+| --- | --- | --- | --- | --- |
+| data | dict | compulsory |  | data loaded from the yaml file |
 
-Guess the type of variable teams?
+### Returns:
+| Return | dtype | description |
+| --- | --- | --- |
+| variable | list | List containing the teams with their names |
+
+
+Hint: Access the key value `info` from the dictionary along with the key value `teams` inside the info dictionary.
+
