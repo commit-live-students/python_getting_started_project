@@ -16,3 +16,9 @@ How many deliveries did he bat??
 | Parameter | dtype | argument type | default value | description |
 | --- | --- | --- | --- | --- |
 | data | dict | compulsory |  | data loaded from the yaml file |
+
+
+### Returns:
+| Return | dtype | description |
+| --- | --- | --- |
+| variable count| int | No of deliveries ricky ponting batted |
