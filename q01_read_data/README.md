@@ -1,12 +1,22 @@
-## Task 1: Read the Data File
+# Read the Data File
+Hello folks, this assignment will be comprising of intial step of reading and loading the data in structured format.
 
-* After performing this task we will be able to read the yaml file into the python.
-* This function will read the data from yaml format.
+## Write the function `read_data` that:
+* Makes use of python's yaml package and performs the task to read the data from yaml file.
 
-As we discussed, the data comes from `cricsheet.org` which provides structured ball by ball data which you can use for any sort of analysis. The data is in yaml (Yet Another Markup Language) format. Load it in using python's yaml package and return it.
+### Parameters :
+None
 
-Write your code to import the following yaml file into `data` variable
+### Returns:
+| Return | dtype | description |
+| --- | --- | --- |
+| data | Dictionary | Data recorded in the form of several dictionaries |
 
-**Path : './data/ipl_match.yaml'**
+### Data Set
+As we discussed, the data comes from `cricsheet.org` which provides structured ball by ball data which you can use for any sort of analysis. The data is in yaml (Yet Another Markup Language) format.
+
+
+
+Note - The path from where the file can be loaded **Path : './data/ipl_match.yaml'**
 
 Let's do it!!
