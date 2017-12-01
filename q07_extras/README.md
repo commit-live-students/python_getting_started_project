@@ -1,13 +1,23 @@
-## How many more "extras" (wides, legbyes, etc) were bowled in the second innings as compared to the first inning?
+# How many more "extras" (wides, legbyes, etc) were bowled in the second innings as compared to the first inning?
 
 The task is to find the number of more **extras** bowled in the second innings, compared to first.
 
-* Save the number of more **extras** bowled in the second innings as opposed to first, in the variable `difference`. 
+## Write the function `extras_runs` that :
 
-You will get to use one of the binary operators, we studied in the class.
+* Extracts the information of key `extras` present in the 1st innings and stores it in a list.
+* Extracts the information of key `extras` present in the 2st innings and stores it in another list.
+* Calculates the difference of extras and between 1st and 2nd innings and store it in a variable `difference`.
 
-Seems interesting, right?
+### Parameters:
 
-The function must return an integer.
+| Parameter | dtype | argument type | default value | description |
+| --- | --- | --- | --- | --- |
+| data | dict | compulsory |  | data loaded from the yaml file |
+
+### Returns:
+
+| Return | dtype | description |
+| --- | --- | --- |
+| variable difference | int |Extra runs scored |
 
 _Hint: Find the total count of extras bowled in the first innings, and the total count of extras bowled in the second innings. Subtract them._
