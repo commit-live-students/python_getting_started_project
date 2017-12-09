@@ -7,7 +7,7 @@ data = read_data()
 def BC_runs(data):
 
     # Write your code here
-    uns = 0
+    runs = 0
 
     inning1 = data['innings'][0]['1st innings']['deliveries']
     for item in inning1:
