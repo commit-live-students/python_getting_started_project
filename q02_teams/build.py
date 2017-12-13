@@ -7,5 +7,7 @@ def teams(data=data):
 
     # write your code here
     #teams =
+    data2 = data['info']
+    teams = data2['teams']
 
     return teams
