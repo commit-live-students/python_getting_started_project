@@ -1,7 +1,9 @@
 import yaml
 
-def read_data():
-    path='./data/ipl_match.yaml'
-    data = open (path,'r')
-    data1=yaml.load(data)
-    return data1
+data=read_data():
+def teams(data=data):
+    ipl_teams=data['info']['teams']
+    return ipl_teams
+
+abc=teams()
+print abc
