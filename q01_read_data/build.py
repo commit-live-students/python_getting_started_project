@@ -8,7 +8,6 @@ def read_data():
     path='./data/ipl_match.yaml'
     data =open(path,'r')
     data1=yaml.load(data)
-    #print(file_open)
 
     # return data variable
     return data1
