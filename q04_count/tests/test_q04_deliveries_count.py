@@ -4,9 +4,12 @@ from unittest import TestCase
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 from q04_count.build import deliveries_count
 
+data = read_data()
+nos_of_delivery = deliveries_count(data)
+
 class TestDeliveries_count(TestCase):
-    def test_deliveries_count(self):
-        data = read_data()
-        nos_of_delivery = deliveries_count(data)
+    def test_deliveries_count_return_type(self):
+       
         self.assertIsInstance(nos_of_delivery, int)
-        self.assertTrue(20 == nos_of_delivery)
+    def test_deliveries_count_return_values(self):
+        self.assertEqual(20 , nos_of_delivery,"The Expected value does not match the return value")
