@@ -5,8 +5,11 @@ data = read_data()
 
 # Your Solution
 def BC_runs(data):
-
-    # Write your code here
-
-
-    return(runs)
+    runs = 0
+    for i in range(len(data['innings'][0]['1st innings']['deliveries'])):
+        a = data['innings'][0]['1st innings']['deliveries'][i]
+        for key in a.keys():
+            if(a[key]['batsman']== 'BB McCullum'):
+                b = a[key]['runs']['batsman']
+                runs = runs+b
+    return runs
