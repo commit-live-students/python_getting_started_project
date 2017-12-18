@@ -9,6 +9,6 @@ def deliveries_count(data=data):
     for i in subset_data:
         if i.values()[0]['batsman']=='RT Ponting':
             nos_of_delivery=nos_of_delivery+1
-            return nos_of_delivery+3
+    return nos_of_delivery
 
 deliveries_count()
