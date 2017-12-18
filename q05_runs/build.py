@@ -10,4 +10,6 @@ def BC_runs(data):
     for i in subset_data:
         if i.values()[0]['batsman'] == 'BB McCullum':
             runs = runs + i.values()[0]['runs'].values()[0]
-            return(runs)
+    return(runs)
+
+BC_runs(data)
