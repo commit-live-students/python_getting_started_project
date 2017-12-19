@@ -1,18 +1,11 @@
-# Default Imports
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
+find1=data['innings']
+find2=find1[0]
+find3=find2['1st innings']['deliveries']
 def deliveries_count(data=data):
-    d = data['innings'][0]['1st innings']['deliveries']
-    n = 0
-    count = 0
-    while n <= 123:
-        ls = d[n]
-        for k in ls:
-            nw = ls[k]
-            for s in nw:
-                nm = nw['batsman']
-        if nm == 'RT Ponting':
-            count = count + 1
-    n = n + 1
-    return count
-print count
+    nos_of_delivery = 0
+    for i in find3:
+        if i.values()[0]['batsman']=='RT Ponting':
+            nos_of_delivery = nos_of_delivery + 1
+    return nos_of_delivery
