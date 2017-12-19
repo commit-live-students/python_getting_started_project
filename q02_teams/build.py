@@ -3,10 +3,14 @@ from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
 
 # solution
-def teams(data=data):
+def array_reshaped_zeros():
 
-    # write your code here
-    teams =data['info']['teams']
+    def array_zeros():
 
-    return teams
-    
+        zero_arrays=np.zeros((3,4,2))
+
+        return zero_arrays
+
+        zeros_array_reshaped = array_zeros().reshape((2,3,4))
+
+        return zeros_array_reshaped
