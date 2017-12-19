@@ -5,4 +5,4 @@ def read_data():
     data = yaml.load(data1)
     return data;
 
-read_data();
+print read_data();
