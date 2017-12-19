@@ -4,8 +4,10 @@ data = read_data()
 
 # Your Solution
 def bowled_out(data=data):
-
-    # Write your code here
-
-
+    subset_data= data['innings'][1]['2nd innings']['deliveries']
+    bowled_players=[]
+    for i in subset_data:
+        if i.values()[0].get('wicket') != None:
+            if i.values()[0]['wicket']['kind']=='bowled':
+                bowled_players.append(i.values()[0]['wicket']['player_out'])
     return bowled_players
