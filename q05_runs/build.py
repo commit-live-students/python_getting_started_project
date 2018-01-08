@@ -6,7 +6,15 @@ data = read_data()
 # Your Solution
 def BC_runs(data):
 
-    # Write your code here
+    run = 0
+    count = 0
+    for i in range (len(data['innings'][0]['1st innings']['deliveries'])):
+        a = data['innings'][0]['1st innings']['deliveries'][i].values()
+        if (a[0]['batsman']) == "BB McCullum":
+            run = a[0]['runs']['batsman']
+            count = count+run
+            #print count
+        print count
 
 
     return(runs)
