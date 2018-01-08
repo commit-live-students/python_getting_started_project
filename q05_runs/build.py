@@ -5,7 +5,7 @@ data = read_data()
 
 # Your Solution
 def BC_runs(data):
-
+    runs = 0
     run = 0
     count = 0
     for i in range (len(data['innings'][0]['1st innings']['deliveries'])):
@@ -14,7 +14,7 @@ def BC_runs(data):
             run = a[0]['runs']['batsman']
             count = count+run
             #print count
-        print count
+        runs=count
 
 
     return(runs)
