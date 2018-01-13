@@ -5,7 +5,7 @@ data = read_data()
 # solution
 def teams(data=data):
 
-    # write your code here
-    #teams =
+    #   write your code here
+    teams = data.get('info').get('teams')
 
     return teams
