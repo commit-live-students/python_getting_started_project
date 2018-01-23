@@ -4,7 +4,10 @@ data = read_data()
 
 
 # Your Solution
-def BC_runs(data):
+def BC_runs(*data):
+    runs = 0
+    for n in data:
+        runs += n 
 
     # Write your code here
 

@@ -1126,7 +1126,8 @@ innings:
               extras: 0
               total: 0
             wicket:
-              kind: bowled
+              kind:
+
               player_out: R Dravid
         - 1.2:
             batsman: V Kohli
@@ -1187,7 +1188,8 @@ innings:
               extras: 0
               total: 0
             wicket:
-              kind: bowled
+              kind:
+
               player_out: V Kohli
         - 2.3:
             batsman: JH Kallis
@@ -1817,7 +1819,8 @@ innings:
               extras: 0
               total: 0
             wicket:
-              kind: bowled
+              kind:
+
               player_out: Z Khan
         - 13.2:
             batsman: SB Joshi
