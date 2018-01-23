@@ -14,4 +14,4 @@ def read_data(path='./data/ipl_match.yaml'):
     #data =yaml.load(f)
 
     # return data variable
-    return data
+    #return data
