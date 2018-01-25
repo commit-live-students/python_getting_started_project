@@ -6,8 +6,8 @@ data = read_data()
 # Your Solution
 def BC_runs(*data):
     runs = 0
-    for n in data:
-        runs += n 
+    for BB McCullum in data:
+        runs += runs
 
     # Write your code here
 
