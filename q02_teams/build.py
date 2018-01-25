@@ -11,3 +11,5 @@ def teams(data=data):
 
 
     return teams
+
+print data
