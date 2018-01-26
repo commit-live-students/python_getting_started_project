@@ -1,5 +1,5 @@
 import yaml
-import os.path as filepath
+
 
 def read_data():
 
