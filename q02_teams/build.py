@@ -4,8 +4,9 @@ data = read_data()
 
 # solution
 def teams(data=data):
-
-    # write your code here
-    #teams =
+    teams = []    
+    for team in data['info']['teams']:
+        teams.append(team)
 
     return teams
+teams(data)
