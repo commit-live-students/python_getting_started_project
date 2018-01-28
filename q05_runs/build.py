@@ -4,12 +4,15 @@ data = read_data()
 
 
 # Your Solution
-def BC_runs(*data):
+def BC_runs(data):
     runs = 0
-    for BB McCullum in data:
-        runs += runs
+    a = data['innings'][0]['1st innings']['deliveries']
+    for deliveries in a:
+        for b in deliveries:
+            if deliveries[b]['batsman'] == 'BB McCullum':
+                    runs += deliveries[b]['runs']['batsman']
+
+
 
     # Write your code here
-
-
     return(runs)
