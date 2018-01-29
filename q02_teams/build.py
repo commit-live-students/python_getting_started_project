@@ -4,8 +4,7 @@ data = read_data()
 
 # solution
 def teams(data=data):
-    teams = []
-    for rec in  data.item():
-        if rec[0] ='info' and rec[1]='teams':
-            teams = teams.append [rec]
+    #solution
+    info = data.get('info')
+    teams = info.get('teams')
     return teams
