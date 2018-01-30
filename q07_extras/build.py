@@ -2,7 +2,7 @@
 # Default Imports
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
-
+import math
 # Your Solution
 def extras_runs(data=data):
 
@@ -29,10 +29,11 @@ def extras_runs(data=data):
             else:
                 pass
             
-    difference = 6 #run_first_innings - run_second_innings 
+    difference = abs(run_second_innings - run_first_innings) 
             
     return difference
 
+extras_runs()
 
 
 
