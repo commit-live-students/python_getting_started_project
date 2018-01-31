@@ -4,6 +4,8 @@ data = read_data()
 
 # Your Solution
 def bowled_out(data=data):
+    bowled_players = []
+    deliveries = data['innings'][1][]
 
     # Write your code here
 
