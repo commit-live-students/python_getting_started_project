@@ -5,6 +5,5 @@ data = read_data()
 # solution
 def teams(data=data):
     #solution
-    info = data.get('info')
-    teams = info.get('teams')
+    teams = data['info']['teams']
     return teams
