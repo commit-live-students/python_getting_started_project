@@ -6,9 +6,17 @@ data = read_data()
 def extras_runs(data=data):
 
     # Write your code here
-
-
-    difference =
-
-
+    extras_1st, extras_2nd = [], []
+    count1, count2 = 0, 0
+    r = data['innings'][0]['1st innings']['deliveries']
+    for d in r:
+        for read_inside in d:
+            if d[read_inside].get('extras'):
+                count1 += 1
+    r1 = data['innings'][1]['2nd innings']['deliveries']
+    for d in r1:
+        for read_inside in d:
+            if d[read_inside].get('extras'):
+                count2 += 1
+    difference = count2 - count1
     return difference
