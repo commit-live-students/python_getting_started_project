@@ -12,11 +12,15 @@ def extras_runs(data=data):
     for d in r:
         for read_inside in d:
             if d[read_inside].get('extras'):
-                count1 += 1
+                 player = d[read_inside].get('extras')
+                 extras_1st.append(player)
+                 count1 += 1
     r1 = data['innings'][1]['2nd innings']['deliveries']
     for d in r1:
         for read_inside in d:
             if d[read_inside].get('extras'):
+                player = d[read_inside].get('extras')
+                extras_2nd.append(player)
                 count2 += 1
     difference = count2 - count1
     return difference
