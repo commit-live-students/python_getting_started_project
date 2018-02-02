@@ -6,7 +6,7 @@ def read_data():
     # Write your code here
 
     path = './data/ipl_match.yaml'
-    with open(path, 'r') as file:
+    with open(path, mode='r') as file:
         data = yaml.load(file)
 
     # return data variable
