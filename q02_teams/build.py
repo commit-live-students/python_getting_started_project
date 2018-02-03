@@ -8,4 +8,8 @@ def teams(data=data):
     # write your code here
     #teams =
 
+    teamInfo= data['info']
+
+    teams=teamInfo['teams']
+
     return teams
