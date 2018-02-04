@@ -4,6 +4,7 @@ data = read_data()
 
 
 # Your Solution
+'''
 def BC_runs(data):
     runs=0
     for k in data['innings'][0]['1st innings']['deliveries']:
@@ -12,3 +13,10 @@ def BC_runs(data):
                 runs=runs+x['runs']['batsman']
 
     return(runs)
+'''
+runs=0
+for k in data['innings'][0]['2nd innings']['deliveries']:
+    for y,x in k.items():
+        if 'wicket' in x :
+            if x['wicket']['kind']== 'bowled':
+                print 'a'
