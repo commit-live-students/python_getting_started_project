@@ -2,12 +2,19 @@
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
 
-# Your Solution
-def first_batsman(data=data):
 
-    # Write your code here
+#print data.keys()
+def first_batsman(data1):
+    t2 = data1["innings"]
+    #print t2
+    y = t2[0]
+    z = y.values()
+    a = z[0]
+    b = a['deliveries']
+    c = b[0]
+    d = c.values()
+    e = d[0]
+    variable = e['batsman']
+    return variable
 
-
-
-
-    return name
+print first_batsman(data)
