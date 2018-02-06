@@ -2,10 +2,10 @@
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
 
-# solution
-def teams(data=data):
 
-    # write your code here
-    #teams =
+def teams(data1):
+    variable1 = data1["info"]
+    variable = variable1["teams"]
+    return variable
 
-    return teams
+print teams(data)
