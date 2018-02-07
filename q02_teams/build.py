@@ -10,3 +10,4 @@ def teams(data=data):
 
     return teams
 teams(data)
+print(teams)
