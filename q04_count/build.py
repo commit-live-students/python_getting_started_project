@@ -4,8 +4,14 @@ data = read_data()
 
 # Your Solution Here
 def deliveries_count(data=data):
-    
-    # Your code here
-    
+    innings = data['innings'][0]
+    first_innings = innings['1st innings']
+    deliveries = first_innings['deliveries']
+    deliveries_count = 0
+    for k in deliveries:
+        for key, value in k.iteritems():
+            if value['batsman'] == 'RT Ponting':
+                deliveries_count +=1
+    return(deliveries_count)
 
-    return count
+print(deliveries_count(data))
