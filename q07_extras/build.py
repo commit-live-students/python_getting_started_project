@@ -28,7 +28,7 @@ def extras_runs(data=data):
                 extra_2.append(deliveries[ball]['runs']['extras'])
         #sum_extra_2 = len(extra_2)
     #print extra_2
-    difference = len(extra_2) - len(extra_1)
+    difference = abs(len(extra_1) - len(extra_2))
 
 
     return difference
