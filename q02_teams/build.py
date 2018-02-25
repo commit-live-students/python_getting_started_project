@@ -4,9 +4,9 @@ data = read_data()
 
 # solution
 def teams(data=data):
-    first_key = data["info"]["teams"]
-    return first_key
-        
+    teams = data["info"]["teams"]
+    return teams
+
 
 
 
