@@ -4,7 +4,7 @@ data = read_data()
 
 # solution
 def teams(data=data):
-    teams = data["info"]["teams"]
+    teams = data['info']['teams']
     return teams
 
 teams(data)
