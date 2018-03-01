@@ -5,7 +5,10 @@ data = read_data()
 # solution
 def teams(data=data):
 
-    # write your code here
-    #teams =
 
-    return teams
+    # write your code here
+
+    f_name = data['info']['teams']
+
+    return f_name
+print teams()
