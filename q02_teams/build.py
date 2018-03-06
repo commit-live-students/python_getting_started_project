@@ -11,4 +11,3 @@ def teams(data=data):
     f_name = data['info']['teams']
 
     return f_name
-print teams()
