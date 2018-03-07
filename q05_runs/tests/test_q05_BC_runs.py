@@ -9,8 +9,7 @@ McCullum_runs = BC_runs(data)
 
 class TestBC_runs(TestCase):
     def test_BC_runs_return_type(self):
-        
-        self.assertIsInstance(McCullum_runs, int,"The Expected type does not match the return type")
+        self.assertIsInstance(McCullum_runs, int, "The Expected type does not match the return type")
 
     def test_BC_runs_return_values(self):
-        self.assertEqual(158 , McCullum_runs,"The Expected value does not match the return value")
+        self.assertEqual(158, McCullum_runs, "The Expected value does not match the return value")

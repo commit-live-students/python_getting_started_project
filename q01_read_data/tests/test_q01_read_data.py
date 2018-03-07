@@ -5,6 +5,6 @@ from unittest import TestCase
 from q01_read_data.build import read_data
 
 class TestRead_data(TestCase):
-    def test_read_data_return_instance(self):
+    def test_return_instance(self):
         result = read_data()
         self.assertIsInstance(result, dict,"The expected instance does not match with the return instance")

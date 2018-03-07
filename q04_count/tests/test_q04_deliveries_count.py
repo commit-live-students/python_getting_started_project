@@ -7,9 +7,10 @@ from q04_count.build import deliveries_count
 data = read_data()
 nos_of_delivery = deliveries_count(data)
 
+
 class TestDeliveries_count(TestCase):
     def test_deliveries_count_return_type(self):
-       
         self.assertIsInstance(nos_of_delivery, int)
+
     def test_deliveries_count_return_values(self):
-        self.assertEqual(20 , nos_of_delivery,"The Expected value does not match the return value")
+        self.assertEqual(20, nos_of_delivery, "The Expected value does not match the return value")
