@@ -14,7 +14,7 @@ def BC_runs(data):
             if(d[ball]['batsman'] == 'BB McCullum'):
                 runs += d[ball]['runs']['batsman']
     return(runs)
-
+runs = BC_runs(data)
 BC_runs(data)
 
 
