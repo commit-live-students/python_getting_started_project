@@ -1,11 +1,17 @@
-# default imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
+import yaml
 
-# solution
-def teams(data=data):
+def read_data():
+    f=open('./data/ipl_match.yaml')
+    datadict=yaml.load(f)
+    return datadict
 
-    # write your code here
-    #teams =
+def teams(datadict):
+    team_list=datadict['info']['teams']
+    return team_list
+    
 
-    return teams
+
+   
+datadict=read_data()
+teams(datadict)
+
