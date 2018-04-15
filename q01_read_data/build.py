@@ -10,6 +10,6 @@ def read_data():
 
     with open('./data/ipl_match.yaml','rb') as f:
             data=(yaml.load(f))
-    print(data)
     return data
     #return read
+read_data()
