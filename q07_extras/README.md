@@ -18,6 +18,6 @@ The task is to find the number of more **extras** bowled in the second innings, 
 
 | Return | dtype | description |
 | --- | --- | --- |
-| variable difference | int |Extra ball bowled |
+| variable difference | int | Extra ball bowled |
 
 _Hint: Find the total count of extras bowled in the first innings, and the total count of extras bowled in the second innings. Subtract them._
