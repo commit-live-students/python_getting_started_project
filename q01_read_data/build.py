@@ -11,5 +11,7 @@ def read_data():
     return MyDict
 
 read_data()
+read_data()
+
 
 
