@@ -10,6 +10,6 @@ def read_data():
             print(exc)
     return MyDict
 
-
+read_data()
 
 
