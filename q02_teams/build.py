@@ -1,11 +1,27 @@
-# default imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
+import yaml
 
-# solution
-def teams(data=data):
+def read_data():
+ 
+    with open('./data/ipl_match.yaml', 'r') as stream:
+        try:
+            MyDict = yaml.load(stream)
+            print(yaml.load(stream))
+        except yaml.YAMLError as exc:
+            print(exc)
+    return MyDict
 
-    # write your code here
-    #teams =
 
-    return teams
+
+
+TeamDict = read_data()
+
+def teams(TeamDict):
+    teamList = TeamDict['info']['teams']
+    return teamList
+
+
+
+teams(TeamDict)
+
+
+
