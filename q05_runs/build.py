@@ -1,12 +1,28 @@
-# Default Imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
+import yaml
 
+def read_data():
+ 
+    with open('./data/ipl_match.yaml', 'r') as stream:
+        try:
+            MyDict = yaml.load(stream)
+            print(yaml.load(stream))
+        except yaml.YAMLError as exc:
+            print(exc)
+    return MyDict
 
-# Your Solution
-def BC_runs(data):
+TeamDict = read_data()
 
-    # Write your code here
+def BC_runs(TeamDict):
+    inningsInfo = TeamDict['innings'][0]
+    deliveries_details = inningsInfo['1st innings']['deliveries']
+    runs = 0
+    for dictDetails in deliveries_details:    
+        for x in dictDetails: 
+            for val in dictDetails.values():
+                    if((val['batsman']) == 'BB McCullum'):
+                        runs += val['runs']['batsman']
+                        
+   
+    return runs
+BC_runs(TeamDict)
 
-
-    return(runs)
