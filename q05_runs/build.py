@@ -1,12 +1,8 @@
-# Default Imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
 
+# Default imports
+import numpy as np
 
-# Your Solution
-def BC_runs(data):
+def read_ipl_data_csv(path, dtype):
 
-    # Write your code here
+    return np.genfromtxt(path, dtype=dtype, skip_header=1, delimiter=',')
 
-
-    return(runs)
