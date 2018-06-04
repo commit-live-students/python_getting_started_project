@@ -1,8 +1,18 @@
 
-# Default imports
-import numpy as np
+# Default Imports
+from greyatomlib.python_getting_started.q01_read_data.build import read_data
+data = read_data()
 
-def read_ipl_data_csv(path, dtype):
 
-    return np.genfromtxt(path, dtype=dtype, skip_header=1, delimiter=',')
+def BC_runs(data=data):
+
+    runs = 0
+    deliveries = data['innings'][0]['1st innings']['deliveries']
+    for delivery in deliveries:
+        for delivery_number, delivery_info in delivery.items():
+            if delivery_info['batsman'] == 'BB McCullum':
+                runs += delivery_info['runs']['batsman']
+
+    return(runs)
+
 
