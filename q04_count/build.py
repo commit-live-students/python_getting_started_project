@@ -14,4 +14,3 @@ def deliveries_count(data=data):
 
     return count
 
-
