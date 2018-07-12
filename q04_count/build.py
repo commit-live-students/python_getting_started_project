@@ -4,21 +4,26 @@ from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
 
 # Your Solution Here
-lst=[]
 
 def deliveries_count(data=data):
-    lst.append(data['innings'][0]['1st innings']['deliveries'])
+    count=0
+    deliveries = data['innings'][0]['1st innings']['deliveries']
+    b = 0.1
+    for a in range(len(deliveries)):
+        for b in deliveries[a]:
+            print(deliveries[a][b]['batsman'])
+            if (deliveries[a][b]['batsman']=='RT Ponting'):
+                count+=1
+    return count
+    
     
      
     # Your code here
-    count = 0   
-    for balls in lst:
-        if {'batsman': 'RT Ponting'}:
-            count += 1
-        else:
-            continue
-        return balls
+    
             
 deliveries_count(data)
-data['innings'][0]['1st innings']['deliveries']
+#lst[0][46][7.3]['batsman']
+#list(range(lst[0][1],lst[0][123]))
+#data['innings'][0]['1st innings']['deliveries']
+current_deliveries
 
