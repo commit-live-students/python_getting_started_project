@@ -7,7 +7,7 @@ def read_data():
     return dict
 
 def teams(ipl_dict):
-    lst = (dict_ipl['info']['teams'])
+    lst = (ipl_dict['info']['teams'])
     return lst
 
 print('current dir : ' , sys.getcwd())
