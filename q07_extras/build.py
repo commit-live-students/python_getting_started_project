@@ -27,8 +27,8 @@ def extras_runs(data=data):
                     Innings_2 += delivery_info['extras']['legbyes']
 
 
-    print('Total no in innings_2: ',Innings_2)
-    print('Total no in innings_1: ',Innings_1)
+  #  print('Total no in innings_2: ',Innings_2)
+   # print('Total no in innings_1: ',Innings_1)
     difference = Innings_2 - Innings_1
     return difference
 extras_runs()
