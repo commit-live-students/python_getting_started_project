@@ -1,12 +1,14 @@
-import yaml
-
 def read_data():
+    import os, yaml
 
-    # import the csv file into `data` variable
-    # You can use this path to access the CSV file: '../data/ipl_match.yaml'
-    # Write your code here
+    #os.chdir('/home/notebooks/data')
+    #os.getcwd()
 
-    data =
+    with open ('./data/ipl_match.yaml') as yamlfile:
+        yaml_data = yaml.load(yamlfile)
+    return yaml_data
 
-    # return data variable
-    return data
+type(read_data())
+read_data()
+cliv
+
