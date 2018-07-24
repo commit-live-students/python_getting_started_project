@@ -5,14 +5,12 @@ data = read_data()
 
 # Your Solution
 def first_batsman(data=data):
-
-    # Write your code here
-#     name = data['innings']['1st innings']['deliveries']['0.1']['batsman']
-    #name = data.get('batsman')
-    name = data[innings[0]]
-
-
+    
+#     name = data['innings'][0]['1st innings']['deliveries'][0]['0.1']['batsman'])
+    name = data['innings'][0]['1st innings']['deliveries'][0][0.1]['batsman']
     return name
+    
+
 
 
 
