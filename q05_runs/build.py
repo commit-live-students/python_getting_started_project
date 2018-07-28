@@ -1,3 +1,4 @@
+# %load q05_runs/build.py
 # Default Imports
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
@@ -7,6 +8,13 @@ data = read_data()
 def BC_runs(data):
 
     # Write your code here
-
-
+    runs=0
+    total_del_1st_innings=len(data['innings'][0]['1st innings']['deliveries'])
+    lst=data['innings'][0]['1st innings']['deliveries']
+    for i in range(total_del_1st_innings):
+        for x,y in lst[i].items():
+            if (lst[i][x]['batsman']=='BB McCullum'):
+                runs+=lst[i][x]['runs'].get('batsman')
     return(runs)
+BC_runs(data)
+
