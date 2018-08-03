@@ -23,6 +23,6 @@ def teams(info):
 print(data['info']['teams'])
 teams('info')
 
-data(0)
+
 
 
