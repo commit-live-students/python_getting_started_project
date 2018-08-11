@@ -14,6 +14,6 @@ print(teams(data))
 
 
 
-data
+
 
 
