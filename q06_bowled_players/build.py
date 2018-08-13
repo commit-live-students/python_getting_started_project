@@ -6,6 +6,13 @@ data = read_data()
 def bowled_out(data=data):
 
     # Write your code here
-
+    bowled_players = []
+    deliveries = data['innings'][1]['2nd innings']['deliveries']
+    for delivery in deliveries:
+        for each_ball in delivery.values():
+            for x in each_ball.keys():
+                if x == 'wicket':
+                    if each_ball[x]['kind'] == 'bowled':
+                        bowled_players.append(each_ball['batsman'])
 
     return bowled_players
