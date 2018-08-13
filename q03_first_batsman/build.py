@@ -6,8 +6,5 @@ data = read_data()
 def first_batsman(data=data):
 
     # Write your code here
-
-
-
-
+    name = data['innings'][0]['1st innings']['deliveries'][0].values()[0]['batsman']
     return name

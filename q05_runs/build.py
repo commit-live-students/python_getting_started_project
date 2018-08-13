@@ -7,6 +7,7 @@ data = read_data()
 def BC_runs(data):
 
     # Write your code here
-
-
+    d = data['innings'][0]['1st innings']['deliveries']
+    my_list = [a[k] for a in d for k in a if a[k]['batsman'] == 'BB McCullum']
+    runs = sum([x['runs']['batsman'] for x in my_list])
     return(runs)
