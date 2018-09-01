@@ -1,11 +1,37 @@
-# default imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
+import yaml
 
-# solution
-def teams(data=data):
+def read_data() :
+    with open('data/ipl_match.yaml','r') as fileStram:
+     dictValues={}
+     try :
+             dictValues=yaml.load(fileStram)
+     except yaml.YAMLError as fileError:
+             print(fileError)
+     return dictValues
 
-    # write your code here
-    #teams =
+def teams(matchDetails) :
+    teamsList=[]
+    if len(matchDetails) >0 :
+        teamsList=matchDetails['info']['teams']
+    return teamsList
 
-    return teams
+print(teams(read_data()))
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
