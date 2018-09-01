@@ -1,12 +1,11 @@
+# %load q01_read_data/build.py
 import yaml
+import os
 
 def read_data():
-
-    # import the csv file into `data` variable
-    # You can use this path to access the CSV file: '../data/ipl_match.yaml'
-    # Write your code here
-
-    data =
-
-    # return data variable
+    filepath='/data/ipl_match.yaml'
+    path=os.getcwd()+filepath
+    with open(path,'r') as data:
+        print(yaml.load(data))
     return data
+
