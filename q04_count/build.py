@@ -4,30 +4,21 @@ from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
 
 # Your Solution Here
-def deliveries_count(data=data):    
-    # Your code here
-    for i in range(len(data['innings'][0]['1st innings']['deliveries'])):
-        if  data['innings'][0]['1st innings']['deliveries'][i]['batsman'] == 'RT Ponting':
-            count++
-
-    
-
+def deliveries_count(data=data):
+    dta = data['innings'][0]['1st innings']['deliveries']
+    count = 0
+    for i in range(len(dta)):
+        key = list(dta[i].keys())[0]
+        if dta[i][key]['batsman'] == 'RT Ponting':
+            count = count + 1
     return count
 
-data = read_data()
-count = 0
-print(data['innings'])
-data = read_data()
-count = 0
-print(data['innings'][0]['1st innings'])
+ifff = deliveries_count(data)
+print(ifff)
 
-data = read_data()
-count = 0
 
-for i in range(len(data['innings'][0]['1st innings']['deliveries'])):
-        if  data['innings'][0]['1st innings']['deliveries'][i]['batsman'] == 'RT Ponting':
-            count=
-print(count)
+
+
 
 
 
