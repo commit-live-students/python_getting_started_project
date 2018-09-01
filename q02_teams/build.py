@@ -1,3 +1,4 @@
+# %load q02_teams/build.py
 # default imports
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
@@ -7,5 +8,12 @@ def teams(data=data):
 
     # write your code here
     #teams =
+    dict1 = data['info']
+    dict2 =  dict1['teams']
+    print(type(dict2))
+    
+    return dict2
 
-    return teams
+
+
+
