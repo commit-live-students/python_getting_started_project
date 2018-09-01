@@ -1,13 +1,14 @@
-# Default Imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
 
-# Your Solution
-def first_batsman(data=data):
+def first_batsman(matchDetails) :
+    first_batsman_name=''
+    if(len(matchDetails)>0) :
+        first_batsman_name=matchDetails['innings'][0]['1st innings']['deliveries'][0][0.1]['batsman']
+    return first_batsman_name
 
-    # Write your code here
-
-
+        
 
 
-    return name
+
+
+
+
