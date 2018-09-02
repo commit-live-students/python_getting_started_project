@@ -75,7 +75,6 @@ for x in range(0,total):
     y=y/10
     z=0.7
     
-        name = data['innings'][0]['1st innings'] ['deliveries'] [x][y] ['batsman']
 
         print(name)
 n = data['innings'][0]['1st innings'] ['deliveries']
