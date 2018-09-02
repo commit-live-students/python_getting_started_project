@@ -7,7 +7,12 @@ data = read_data()
 def bowled_out(data=data):
     bowled_players=[]
     for a in data['innings'][1]['2nd innings']['deliveries']:
-            if data['innings'][1]['2nd innings']['deliveries'][a]['player_out']:
-                bowled_players.extend(data['innings'][1]['2nd innings']['deliveries'][a]['player_out'].values)
+            for b in a.values():
+                for c in b.items():
+                    if isinstance(c[1],dict):
+                        for d in c[1].items():
+                            if d[0]=='kind':
+                                bowled_players.append(d[1])
+                            print(bowled_players)
     return bowled_players
 
