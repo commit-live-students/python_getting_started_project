@@ -1,12 +1,9 @@
-import yaml
-
 def read_data():
+    import yaml
+    with open('ipl_match.yaml', 'r') as f:
+        doc = yaml.load(f)
+        return doc
 
-    # import the csv file into `data` variable
-    # You can use this path to access the CSV file: '../data/ipl_match.yaml'
-    # Write your code here
 
-    data =
 
-    # return data variable
-    return data
+
