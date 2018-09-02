@@ -1,11 +1,12 @@
-# Default Imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
+def bowled_out(matchDetails) :
+    bowled_players=[]
+    if(len(matchDetails)>0) :
+        for index,delInfo in enumerate(matchDetails['innings'][1]['2nd innings']['deliveries']) :
+            for key,value in delInfo.items() :
 
-# Your Solution
-def bowled_out(data=data):
-
-    # Write your code here
-
-
+                if 'wicket' in value :
+                    if value['wicket']['kind'] == 'bowled' :
+                        bowled_players.append(value['wicket']['player_out'])
+             
     return bowled_players
+
