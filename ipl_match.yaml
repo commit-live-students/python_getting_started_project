@@ -1,0 +1,12 @@
+a list:
+- 1
+- 42
+- 3.141
+- 1337
+- help
+- "â\x82¬"
+a string: bla
+another dict:
+  foo: bar
+  key: value
+  the answer: 42
