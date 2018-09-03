@@ -1,0 +1,2 @@
+# Get the sum of even numbers between 1 and 151 exluding first 7 even numbers 
+sum_even_btwn_1to151=sum(map(lambda (k,v):v,filter((lambda (k,v):(k > 6)),list(enumerate(map(lambda b:b**2,(filter((lambda a:a%2==0),range(1,151)))))))))
