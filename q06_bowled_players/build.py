@@ -7,12 +7,15 @@ data = read_data()
 def bowled_out(data=data):
     bowled_players=[]
     for a in data['innings'][1]['2nd innings']['deliveries']:
-            for b in a.values():
-                for c in b.items():
-                    if isinstance(c[1],dict):
-                        for d in c[1].items():
-                            if d[0]=='kind':
-                                bowled_players.append(d[1])
-                            print(bowled_players)
+       for b in a.items():
+    #print (len(b[1]))
+        if len(b[1])==5:
+            if isinstance((b[1].get('wicket')),dict):
+           #print(b[1].get('wicket'))
+               if len (b[1].get('wicket'))==2: 
+                a=b[1].get('wicket')
+                bowled_players.append(a['player_out'])
+            
+                        
     return bowled_players
 
