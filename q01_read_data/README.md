@@ -17,6 +17,6 @@ As we discussed, the data comes from `cricsheet.org` which provides structured b
 
 
 
-Note - The path from where the file can be loaded **Path : '../data/ipl_match.yaml'**
+Note - The path from where the file can be loaded **Path : './data/ipl_match.yaml'**
 
 Let's do it!!
