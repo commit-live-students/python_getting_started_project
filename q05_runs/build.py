@@ -6,14 +6,20 @@ from unittest import TestCase
 
 
 # Your Solution
+def BC_runs(data):
+    
+    l=(data['innings'][0]['1st innings']['deliveries'])
+    c=0
+    for x in l:
+        for y in x:
+            if(x[y]['batsman'])=='BB McCullum':
+                c+=(x[y]['runs']['batsman'])
+                    
 
 
-class TestBC_runs(TestCase):
-    def test_BC_runs_return_type()
-        self.assertIsInstance(McCullum_runs, int, 'The Expected type does not match the return type')
 
-    def test_BC_runs_return_values(self):
-        self.assertEqual(158, McCullum_runs, 'The Expected value does not match the return value')
+    runs=c
+    return(runs)
 
 
 
