@@ -1,11 +1,11 @@
-# default imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
+import yaml
+def teams(data):
+    info = data['info']
+    team = info['teams']
+    return team
 
-# solution
-def teams(data=data):
+with open('data/ipl_match.yaml','r') as stream:
+    data = yaml.load(stream)
+    
+teams(data)
 
-    # write your code here
-    #teams =
-
-    return teams
