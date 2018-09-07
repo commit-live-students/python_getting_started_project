@@ -20,4 +20,7 @@ def BC_runs(data):
                 
     return(runs)
 
+b = BC_runs(data)
+b
+
 
