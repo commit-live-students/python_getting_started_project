@@ -15,7 +15,7 @@ def BC_runs(data=data):
                 runs = runs + dat[i][key]['runs']['batsman']
     return(runs)
 
-data['innings'][0]#['1st innings']['deliveries'][0][0.1]
-BC_runs(data)
+
+
 
 
