@@ -1,3 +1,4 @@
+# %load q06_bowled_players/build.py
 # Default Imports
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
@@ -10,3 +11,5 @@ def bowled_out(data=data):
     my_list = [a[k] for a in d for k in a ]
     bowled_players = [x['batsman'] for x in my_list if 'wicket' in x and x['wicket']['kind'] == 'bowled']
     return bowled_players
+
+
