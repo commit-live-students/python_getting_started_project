@@ -4,7 +4,7 @@ from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
 
 
-def BC_runs(data):
+def BC_runs(data=data):
     runs = 0
     delivery = data['innings'][0]['1st innings']['deliveries']
     for i in delivery:
