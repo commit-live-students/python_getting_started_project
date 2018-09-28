@@ -19,7 +19,7 @@ def bowled_out(data=data):
                     
                     c.append(x[y]['wicket']['player_out'])
                 
-    bowled_playesr=c
+    bowled_players=c
     return bowled_players
 
 bowled_out
