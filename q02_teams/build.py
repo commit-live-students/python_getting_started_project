@@ -10,6 +10,7 @@ def teams(data=data):
     teams = data['info']['teams']
 
     return teams
-
+T = teams()
+T
 
 
