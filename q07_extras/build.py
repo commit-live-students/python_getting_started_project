@@ -6,7 +6,7 @@ data = read_data()
 # Your Solution
 def extras_runs(data=data):
 
-    Innings1Extra,Innings2Extra=0,0
+    Innings1Extra,Innings2Extra = 0,0
     deliveries = data['innings'][0]['1st innings']['deliveries']
     for delivery in deliveries:
         for delivery_number, delivery_info in delivery.items():
@@ -14,7 +14,7 @@ def extras_runs(data=data):
                 if 'wides' in delivery_info['extras']:
                     Innings1Extra=Innings1Extra+delivery_info['extras']['wides']
                 elif 'legbyes' in delivery_info['extras']:
-                    Innings1Extra=Innings1Extra+delivery_info['extras']['legbyes']
+                    Innings1Extra = Innings1Extra + delivery_info['extras']['legbyes']
 
     deliveries = data['innings'][1]['2nd innings']['deliveries']
     for delivery in deliveries:
@@ -23,9 +23,9 @@ def extras_runs(data=data):
                 if 'wides' in delivery_info['extras']:
                     Innings2Extra=Innings2Extra+delivery_info['extras']['wides']
                 elif 'legbyes' in delivery_info['extras']:
-                     Innings2Extra=Innings2Extra+delivery_info['extras']['legbyes']
+                     Innings2Extra = Innings2Extra + delivery_info['extras']['legbyes']
 
 
-    difference =Innings2Extra-Innings1Extra
+    difference = Innings2Extra - Innings1Extra
 
     return difference
