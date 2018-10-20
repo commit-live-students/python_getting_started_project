@@ -11,3 +11,5 @@ def read_data():
 
     # return data variable
     return data
+
+#print(read_data)
