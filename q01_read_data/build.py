@@ -1,4 +1,3 @@
-
 import yaml
 from time import sleep
 
@@ -9,7 +8,4 @@ def read_data():
         return data
     
 read_data()
-
-
-
 
