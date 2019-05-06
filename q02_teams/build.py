@@ -1,11 +1,25 @@
-# default imports
-from greyatomlib.python_getting_started.q01_read_data.build import read_data
-data = read_data()
+# %load q02_teams/build.py
+import yaml
 
-# solution
-def teams(data=data):
+def read_data():
 
-    # write your code here
-    #teams =
+    # import the csv file into  variable
+    # You can use this path to access the CSV file: '../data/ipl_match.yaml'
+    # Write your code here
 
-    return teams
+    f = open('./data/ipl_match.yaml', 'r')
+    data = yaml.load(f)
+
+    return data
+
+def teams(match_data):
+    return match_data['info']['teams']
+
+
+    
+d = read_data()
+print(teams(d))
+
+
+
+
