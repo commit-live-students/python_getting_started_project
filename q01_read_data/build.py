@@ -1,12 +1,18 @@
-import yaml
+import yaml as ym
+import os as sys
 
 def read_data():
+    fName='data/ipl_match.yaml'
+    dict = ym.load(open(fName))
+    return dict
 
-    # import the csv file into `data` variable
-    # You can use this path to access the CSV file: '../data/ipl_match.yaml'
-    # Write your code here
 
-    data =
+print('current dir : ' , sys.getcwd())
+#fName='data/ipl_match.yaml'
+dict_ipl=read_data()
+dict_ipl['info']
 
-    # return data variable
-    return data
+
+
+
+
