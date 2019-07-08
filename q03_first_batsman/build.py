@@ -1,13 +1,19 @@
+# %load q03_first_batsman/build.py
 # Default Imports
 from greyatomlib.python_getting_started.q01_read_data.build import read_data
 data = read_data()
 
 # Your Solution
 def first_batsman(data=data):
-
+    x=data['innings'][0]['1st innings']['deliveries'][0][0.1]['batsman']
     # Write your code here
 
 
 
 
-    return name
+    return x
+
+a=first_batsman(data)
+a
+
+
