@@ -7,6 +7,12 @@ data = read_data()
 def BC_runs(data):
 
     # Write your code here
+    runs = 0
+    deliveries = data['innings'][0]['1st innings']['deliveries']
+    for ball in deliveries:
+        for each_ball in ball.values():
+            if each_ball['batsman'] == 'BB McCullum':
+                runs = runs + each_ball['runs']['batsman']
 
 
     return(runs)
