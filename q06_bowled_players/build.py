@@ -4,8 +4,17 @@ data = read_data()
 
 # Your Solution
 def bowled_out(data=data):
+    bowled_players = []
+    batsman = data['innings'][1]['2nd innings']['deliveries']
 
+    for rp in batsman:
+        #print rp.values()[0].keys()['wicket']
+        for ele in rp.values()[0].keys():
+            if ele == 'wicket':
+                if rp.values()[0]['wicket']['kind'] == 'bowled':
+                    bowled_players.append(rp.values()[0]['wicket']['player_out'])
     # Write your code here
 
 
     return bowled_players
+print bowled_out()
