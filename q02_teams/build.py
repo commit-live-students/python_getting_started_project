@@ -4,8 +4,8 @@ data = read_data()
 
 # solution
 def teams(data=data):
-
     # write your code here
-    #teams =
+    ilp_teams = data['info']['teams']
+    return ilp_teams
 
-    return teams
+ipl_teams = teams(data)
