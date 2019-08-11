@@ -4,8 +4,8 @@ data = read_data()
 
 # solution
 def teams(data=data):
+    namesofteams=data['info']['teams']
+    print type(namesofteams)
+    return namesofteams
 
-    # write your code here
-    #teams =
-
-    return teams
+teams()
