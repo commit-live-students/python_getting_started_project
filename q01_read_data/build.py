@@ -1,12 +1,9 @@
 import yaml
 
-def read_data():
+data=read_data():
+def teams(data=data):
+    ipl_teams=data['info']['teams']
+    return ipl_teams
 
-    # import the csv file into `data` variable
-    # You can use this path to access the CSV file: '../data/ipl_match.yaml'
-    # Write your code here
-
-    data =
-
-    # return data variable
-    return data
+abc=teams()
+print abc
