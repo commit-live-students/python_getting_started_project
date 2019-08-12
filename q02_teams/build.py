@@ -5,7 +5,8 @@ data = read_data()
 # solution
 def teams(data=data):
 
-    # write your code here
-    #teams =
-
-    return teams
+     data1=data['info']['teams']
+    # print data1
+     return data1
+        #print t1['meta']
+#print teams(data)
