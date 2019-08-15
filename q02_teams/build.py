@@ -4,8 +4,9 @@ data = read_data()
 
 # solution
 def teams(data=data):
-
+    teams = []
     # write your code here
-    #teams =
-
+    for key in data:
+        if key == 'info':
+            teams = data['info']['teams']
     return teams
