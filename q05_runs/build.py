@@ -6,7 +6,11 @@ data = read_data()
 # Your Solution
 def BC_runs(data):
 
-    # Write your code here
+    runs = 0
+    for d in data['innings'][0]['1st innings']['deliveries']:
+        for k, v in d.items():
+            if v['batsman'] == 'BB McCullum':
+                runs += v['runs']['batsman']
 
 
     return(runs)
