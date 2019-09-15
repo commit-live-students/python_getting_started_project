@@ -6,7 +6,9 @@ def read_data():
     # You can use this path to access the CSV file: '../data/ipl_match.yaml'
     # Write your code here
 
-    data =
+    path = './data/ipl_match.yaml'
+    with open(path, mode ='r') as file_loader:
+        data = yaml.load(file_loader)
 
-    # return data variable
     return data
+        # return data variable
