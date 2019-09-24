@@ -4,8 +4,13 @@ data = read_data()
 
 # Your Solution Here
 def deliveries_count(data=data):
-    
+
     # Your code here
-    
+    deliveries = data['innings'][0]['1st innings']['deliveries']
+    count=0
+    for delivery in deliveries:
+        for delivery_number, delivery_info in delivery.items():
+            if delivery_info['batsman'] == 'RT Ponting':
+                count=count+1
 
     return count
