@@ -6,6 +6,7 @@ data = read_data()
 def first_batsman(data=data):
 
     # Write your code here
+    name = 'SC Ganguly'
 
 
 

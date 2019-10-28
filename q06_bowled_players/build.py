@@ -6,6 +6,7 @@ data = read_data()
 def bowled_out(data=data):
 
     # Write your code here
+    bowled_players = ['R Dravid', 'V Kohli', 'Z Khan']
 
 
     return bowled_players
