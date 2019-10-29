@@ -8,7 +8,8 @@ def extras_runs(data=data):
     # Write your code here
 
 
-    difference =
+    difference =len([j for i in data['innings'][1]['2nd innings']['deliveries'] for j,k in i.values()[0].items() if j == 'extras'])-len([j for i in data['innings'][0]['1st innings']['deliveries'] for j,k in i.values()[0].items() if j == 'extras'])
+
 
 
     return difference
